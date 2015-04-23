@@ -1,0 +1,53 @@
+[
+  	{
+  		"userId": "1",
+  		"accounts": [
+  			{
+  				"accountTitle": "Lukas Podolski",
+  				"accountId":"5468754",
+  				"balance": "$499"
+  			},
+  			{
+  				"accountTitle": "Bastian Schwinstiger",
+  				"accountId":"5487954",
+  				"balance": "$500"
+  			}
+
+  		]
+	},
+  	{
+  		"userId": "2",
+  		"accounts": [
+  			{
+  				"accountTitle": "David Beckham",
+  				"accountId":"9941556",
+  				"balance": "$50000"
+  			},
+  			{
+  				"accountTitle": "Wayne Rooney",
+  				"accountId":"9956552",
+  				"balance": "$100000"
+  			}
+
+  		]
+	},
+  	{
+  		"userId": "3",
+  		"accounts": [
+  			{
+  				"accountTitle": "Shahid Afridi",
+  				"accountId":"8877884",
+  				"balance": "$25"
+  			},
+  			{
+  				"accountTitle": "Brian Lara",
+  				"accountId":"5565221",
+  				"balance": "$10000"
+  			}
+
+  		]
+	}
+]
+  
+  
+ 

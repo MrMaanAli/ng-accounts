@@ -1,0 +1,25 @@
+<div ng-controller="DashCtrl" id="users">
+  <h1 class="h1 text-center">Users</h1>
+
+  <table class="table table-striped table-bordered table-hover" id="usersTable">
+    <thead>
+    <th>#</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th></th>
+
+    </thead>
+
+    <tbody ng-repeat="user in users">
+      <tr>
+        <td ng-bind="user.userId"></td>
+        <td ng-bind="user.name"></td>
+        <td ng-bind="user.address"></td>
+        <td><a href="#/{{user.userId}}/accounts">View Accounts</a></td>
+      </tr>
+    </tbody>
+
+    <tfoot></tfoot>
+  </table>
+
+</div>

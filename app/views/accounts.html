@@ -1,0 +1,28 @@
+<div ng-controller="AccountsCtrl">
+  <h1 class="h1 text-center">Accounts</h1>
+
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+    <th>Account Title</th>
+    <th>Account Number</th>
+    <th>Balance</th>
+    <th></th>
+    <th></th>
+    <th></th>
+
+    </thead>
+
+    <tbody ng-repeat="account in accounts">
+    <tr>
+      <td ng-bind="account.accountTitle"></td>
+      <td ng-bind="account.accountId"></td>
+      <td ng-bind="account.balance"></td>
+      <td><a ng-click="viewLastTransaction($index)">View Last Transaction</a></td>
+      <td><a href="#/{{account.accountId}}/transactions">View Transactions</a></td>
+      <td><button class="btn btn-default glyphicon glyphicon-trash" ng-click="deleteAccount($index)"></button></td>
+    </tr>
+    </tbody>
+
+    <tfoot></tfoot>
+  </table>
+</div>

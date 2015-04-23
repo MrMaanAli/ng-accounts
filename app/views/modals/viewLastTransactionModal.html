@@ -1,0 +1,33 @@
+<div>
+
+  <div class="modal-header">
+    <h3 class="modal-title">View Last Transaction</h3>
+  </div>
+  <div class="modal-body">
+
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <th>Transaction ID</th>
+        <th>Transaction Amount</th>
+        <th>Transaction Date</th>
+        <th>Transaction Type</th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td ng-bind="transaction.transactionId"></td>
+          <td ng-bind="transaction.amount"></td>
+          <td ng-bind="transaction.date | date:'MM/dd/yyyy'"></td>
+          <td ng-bind="transaction.type"></td>
+        </tr>
+      </tbody>
+
+      <tfoot></tfoot>
+    </table>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+  </div>
+
+</div>
