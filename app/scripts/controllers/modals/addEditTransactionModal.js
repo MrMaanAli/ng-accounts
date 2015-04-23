@@ -8,7 +8,7 @@
    * Controller of the accountsApp
    */
   angular.module('accountsApp')
-    .controller('AddEditTransactionCtrl', function ($scope, $modalInstance, items) {
+    .controller('AddEditTransactionCtrl', function ($scope, $modalInstance, $filter, items) {
 
       $scope.transaction = items;
 
@@ -58,7 +58,7 @@
       $scope.ok = function () {
         $scope.transaction.amount = $scope.transactionAmount;
         $scope.transaction.type = $scope.transactionType;
-        $scope.transaction.date = $scope.dt;
+        $scope.transaction.date = $filter('date')($scope.dt, $scope.format);
 
         $modalInstance.close($scope.transaction);
       };

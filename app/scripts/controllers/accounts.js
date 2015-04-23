@@ -24,7 +24,7 @@
         });
 
         modalInstance.result.then(function () {
-          $scope.accounts.splice(index,1);
+          $scope.accounts = UserService.splice(index,1);
         }, function () {});
       };
 

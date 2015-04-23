@@ -12,8 +12,6 @@ angular.module('accountsApp')
     // Service logic
     // ...
 
-    var users = [{name:"Usman Ali", id:1},{name:"Shah Fahad", id:2},{name:"Humam Nameer", id:3}];
-
     function filterResponse(defaults, userId) {
       defaults = angular.isArray(defaults) ? defaults : [defaults];
 
@@ -81,11 +79,7 @@ angular.module('accountsApp')
             });
 
         });
-      },
-
-      removeUser: function(index){
-        users.splice( index, 1 );
-        return users;
       }
+
     };
   });
