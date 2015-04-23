@@ -6,7 +6,6 @@
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/dash.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/modals/addEditTransactionModal.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/modals/deleteModal.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/controllers/modals/viewLastTransactionModal.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/modals/viewLastTransactionModal.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/controllers/transactions.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/scripts/services/userservice.js" charset="UTF-8" />

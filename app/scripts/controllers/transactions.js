@@ -38,8 +38,8 @@
         });
 
         modalInstance.result.then(function (newTrans) {
-          var lastIndex = $scope.transactions.length - 1;
-          newTrans.transactionId = 1 + Number($scope.transactions[lastIndex].transactionId);
+          var numOfTrans = $scope.transactions.length;
+          newTrans.transactionId =  numOfTrans > 0 ? (1 + Number($scope.transactions[ numOfTrans - 1 ].transactionId)) : 1;
           $scope.transactions.push(newTrans);
         }, function () {});
 

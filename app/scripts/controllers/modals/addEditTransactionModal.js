@@ -16,7 +16,7 @@
         if ($scope.transaction !== undefined) {
           $scope.dt = $scope.transaction.date;
           $scope.transactionType = $scope.transaction.type;
-          $scope.transactionAmount = $scope.transaction.amount;
+          $scope.transactionAmount = Number( $scope.transaction.amount.replace('$','') );
         }
         else {
           $scope.transaction = {};
@@ -56,7 +56,7 @@
       };
 
       $scope.ok = function () {
-        $scope.transaction.amount = $scope.transactionAmount;
+        $scope.transaction.amount = '$' + $scope.transactionAmount;
         $scope.transaction.type = $scope.transactionType;
         $scope.transaction.date = $filter('date')($scope.dt, $scope.format);
 
